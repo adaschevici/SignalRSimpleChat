@@ -37,7 +37,7 @@ class Chat extends Component {
       .invoke('sendToAll', this.state.nick, this.state.message)
       .catch(err => console.error(err));
 
-      this.setState({message: ''});      
+      this.setState({message: ''});
   };
 
   render() {
